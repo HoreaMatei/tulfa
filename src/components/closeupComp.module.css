@@ -1,0 +1,92 @@
+.closeupContainer {
+  width: 960px;
+
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  background: white;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  row-gap: 20px;
+  border-radius: 33.33px;
+  padding-bottom: 33.33px;
+  height: 100%;
+  position: relative;
+}
+
+.displayNone {
+  display: none;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 65px;
+  width: 36px;
+  height: 36px;
+  top: 55.33px;
+
+  border-radius: 50%;
+  font-size: 30px;
+  border: none;
+  background: rgba(102, 102, 102, 0.6);
+  cursor: pointer;
+}
+
+.close {
+  width: 21.6px;
+  height: 21.6px;
+}
+.img1 {
+  width: 100%;
+  height: 617.33px;
+  border-top-left-radius: 33.33px;
+  border-top-right-radius: 33.33px;
+  border-bottom-right-radius: 0;
+
+  border-bottom-left-radius: 0;
+}
+.h2Container {
+  height: 217px;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  width: 640px;
+  height: 76px;
+  font-weight: light;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    90deg,
+    rgba(42, 38, 106, 1) 0%,
+    rgba(67, 62, 153, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img2,
+.img5,
+.img7 {
+  width: 400px;
+  object-fit: cover;
+  height: 533.33px;
+}
+
+.img3,
+.img4,
+.img8 {
+  width: 520px;
+  object-fit: cover;
+  height: 533.33px;
+}
+
+.img6,
+.img9 {
+  width: 933.33px;
+  object-fit: fill;
+  height: 533.33px;
+}

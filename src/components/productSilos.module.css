@@ -1,0 +1,59 @@
+.silosMainDiv {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.silosSubDiv {
+  text-align: left;
+}
+
+.silosP {
+  height: 76px;
+  width: 414.67px;
+  font-weight: bold;
+  font-size: 64px;
+  z-index: 200;
+  background: rgb(67, 62, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 62, 153, 1) 0%,
+    rgba(239, 75, 50, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.silosMainImg {
+  width: 70vw;
+  height: 930px;
+  margin-right: -500px;
+  overflow: hidden;
+  margin-left: -200px;
+  z-index: -1;
+  transform: rotateY(180deg);
+}
+
+.silosBtn {
+  width: 186px;
+  font-family: "SF Pro Display", sans-serif;
+  height: 43.33px;
+  border: 2px solid #2a266a;
+  background: transparent;
+  color: #2a266a;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: lighter;
+}

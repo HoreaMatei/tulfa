@@ -1,0 +1,14 @@
+h1 {
+  width: 90%;
+  height: 207px;
+  font-weight: bold;
+  font-size: 190px;
+  margin: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 38, 106, 1) 0%,
+    rgba(67, 62, 153, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

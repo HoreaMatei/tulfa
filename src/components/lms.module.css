@@ -1,0 +1,42 @@
+.lmsMain {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.lms {
+  background: #f0f3fb;
+  color: #2a266a;
+}
+.l,
+.m,
+.s {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.m {
+  margin-top: -620px;
+}
+.s {
+  margin-top: -520px;
+}
+
+.imgL {
+  width: 924px;
+  height: 739.32px;
+}
+
+.imgM {
+  width: 795.4px;
+  height: 636px;
+}
+
+.imgS {
+  width: 715.62px;
+  height: 572.59px;
+}

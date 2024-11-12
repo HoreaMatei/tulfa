@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import CloseUpComponent from "./components/CloseUpComponent";
+
+import VisualProd from "./components/VisualProd";
+import Couch from "./components/Couch";
+import TextComponent from "./components/TextComponent";
+import ProductSilos from "./components/ProductSilos";
+import LmsComponent from "./components/LmsComponent";
 
 function App() {
+  const [opened, setOpened] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video className="videoTag" autoPlay loop muted>
+        <source src="./sample.mp4" type="video/mp4" />
+      </video>
+      {/* <VideoText /> */}
+
+      <VisualProd />
+      <Couch />
+      <TextComponent />
+      <ProductSilos />
+      <LmsComponent />
+      <button onClick={() => setOpened(true)}> open modal</button>
+      <CloseUpComponent opened={opened} setOpened={setOpened} />
     </div>
   );
 }
