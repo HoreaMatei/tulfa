@@ -1,0 +1,57 @@
+.armchair_main {
+  display: flex;
+}
+
+.pick_img {
+  width: 150px;
+  object-fit: none;
+}
+
+.pick_container {
+  width: 150px;
+  height: 78px;
+  object-fit: fill;
+
+  overflow: hidden;
+}
+
+.li_div {
+  width: 350px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  padding: 1px;
+}
+
+.normal_img_div {
+  width: 60lvw;
+}
+
+.normal_img {
+  width: 50vw;
+}
+
+.zomm_div {
+  width: 40lvw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.zoom_img {
+  width: 300vw;
+  height: 120vw;
+}
+
+.picks_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border-bottom-left-radius: 20px;
+}

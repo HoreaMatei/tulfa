@@ -1,0 +1,65 @@
+.sofa_main_div {
+  width: 100lvw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100lvh;
+  overflow: hidden;
+}
+
+.sofa_and_buttons_div {
+  height: 100lvh;
+  width: 50lvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sofa_main_img {
+  width: 50lvw;
+}
+
+.zoom_sofa_img {
+  width: auto;
+
+  object-fit: cover;
+  zoom: 150%;
+  margin-top: -60px;
+}
+
+.zoom_sofa_div {
+  background: #f0f3fb;
+  width: 50lvw;
+  height: 100lvh;
+  overflow: hidden;
+}
+.divided_circles_div {
+  margin-bottom: -40px;
+}
+
+.divided_circle1,
+.divided_circle2,
+.divided_circle3 {
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+
+  border-radius: 50%;
+  border: 0.5px solid #9b9b9b;
+  margin-right: 5px;
+  border: none;
+}
+
+.divided_circle1 {
+  background: linear-gradient(0deg, #bd6c15 50%, rgba(189, 108, 21, 0.5) 50%);
+}
+
+.divided_circle2 {
+  background: linear-gradient(0deg, #433e99 50%, rgba(67, 62, 153, 0.5) 50%);
+}
+
+.divided_circle3 {
+  background: linear-gradient(0deg, #b4ac37 50%, rgba(180, 172, 55, 0.5) 50%);
+}

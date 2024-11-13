@@ -8,6 +8,11 @@ import TextComponent from "./components/TextComponent";
 import ProductSilos from "./components/ProductSilos";
 import LmsComponent from "./components/LmsComponent";
 
+import SofaComponent from "./components/SofaComponent";
+import ArmchairComponent from "./components/ArmchairComponent";
+import LifestyleComponent from "./components/LifestyleComponent";
+import CloseUpShotsComponent from "./components/CloseUpShotsComponent";
+
 function App() {
   const [opened, setOpened] = useState(false);
   return (
@@ -22,6 +27,10 @@ function App() {
       <TextComponent />
       <ProductSilos />
       <LmsComponent />
+      <SofaComponent />
+      <ArmchairComponent />
+      <LifestyleComponent />
+      <CloseUpShotsComponent />
       <button onClick={() => setOpened(true)}> open modal</button>
       <CloseUpComponent opened={opened} setOpened={setOpened} />
     </div>

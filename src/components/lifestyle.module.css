@@ -1,0 +1,18 @@
+.lifestyle_main {
+  position: relative;
+}
+
+.lifestyle_img {
+  width: 120%;
+
+  filter: brightness(70%);
+}
+
+.lifestyle_txt {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+}
