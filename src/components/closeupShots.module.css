@@ -1,8 +1,46 @@
+.closer_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 .closeup_shots_img {
   width: 100%;
 }
 
 .closer_look_div {
   color: white;
-  background: black;
+  background: rgba(39, 39, 39, 0.61);
+  position: absolute;
+  bottom: 15px;
+  left: 45%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+
+.expand_icon {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 51, 0, 0.61);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.close_up_shots_p {
+  width: 846px;
+  height: 74px;
+  background: rgb(67, 62, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 62, 153, 1) 0%,
+    rgba(239, 75, 50, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  font-weight: bold;
 }

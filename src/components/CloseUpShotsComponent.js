@@ -1,14 +1,16 @@
+import CloseUpComponent from "./CloseUpComponent";
 import styles from "./closeupShots.module.css";
 
-const CloseUpShotsComponent = () => {
+const CloseUpShotsComponent = ({ setOpened, opened }) => {
   return (
-    <div>
-      <p>Close Up Shots</p>
+    <div className={styles.closer_main}>
+      <p className={styles.close_up_shots_p}>Close Up Shots</p>
       <img className={styles.closeup_shots_img} src="closeUpShots/2.jpg" />
-      <div className={styles.closer_look_div}>
+      <div onClick={() => setOpened(true)} className={styles.closer_look_div}>
         <p>Take a closer look</p>
-        <img src="closeUpShots/expand.png" />
+        <img className={styles.expand_icon} src="closeUpShots/expand.png" />
       </div>
+      <CloseUpComponent opened={opened} setOpened={setOpened} />
     </div>
   );
 };

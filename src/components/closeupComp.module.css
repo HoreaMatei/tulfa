@@ -12,7 +12,7 @@
   border-radius: 33.33px;
   padding-bottom: 33.33px;
   height: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .displayNone {

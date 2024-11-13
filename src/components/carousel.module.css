@@ -1,0 +1,64 @@
+/* Main wrapper for carousel */
+.carousel_main {
+  position: relative;
+  width: 100%;
+  max-width: 100lvw; /* Adjust based on your needs */
+  margin: auto;
+  overflow: hidden; /* Hide slides outside the visible area */
+  height: 100vh;
+}
+
+/* Container to hide slides outside the view */
+.overflow_hidden {
+  position: relative;
+  height: 100vh; /* Set the fixed height for the carousel */
+  width: 100%;
+}
+
+/* The sliding container that holds all slides */
+.slides {
+  display: flex;
+  flex-direction: column; /* Stack slides vertically */
+  height: 100%;
+}
+
+/* Individual slide */
+.slides > * {
+  width: 100%;
+  /* Ensure each slide takes the full height of the carousel */
+  flex-shrink: 0; /* Prevent shrinking of individual slides */
+  height: 100vh;
+}
+
+/* Buttons for navigating */
+.arrows_div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow_icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+/* Optional: add some styling for the arrows */
+.arrow_button img {
+  opacity: 0.7;
+}
+
+.arrow_button:hover img {
+  opacity: 1;
+}

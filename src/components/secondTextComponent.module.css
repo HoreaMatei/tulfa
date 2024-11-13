@@ -1,0 +1,28 @@
+.lorem_h1 {
+  width: 446px;
+  height: 74px;
+  background: rgb(67, 62, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 62, 153, 1) 0%,
+    rgba(239, 75, 50, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.lorem_text {
+  width: 963px;
+  height: 62px;
+  font-size: 26px;
+  margin: auto;
+  color: #2a266a;
+}
+
+.second_text_comp_main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

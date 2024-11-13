@@ -12,8 +12,18 @@ import SofaComponent from "./components/SofaComponent";
 import ArmchairComponent from "./components/ArmchairComponent";
 import LifestyleComponent from "./components/LifestyleComponent";
 import CloseUpShotsComponent from "./components/CloseUpShotsComponent";
+import SecondTextComponent from "./components/SecondTextComponent";
+import Carousel from "./components/Carousel";
 
 function App() {
+  const InstalationSlides = [
+    "./instal/inst1.jpg",
+    "./instal/inst2.jpg",
+    "./instal/inst3.jpg",
+    "./instal/inst4.jpg",
+    "./instal/inst5.jpg",
+    "./instal/inst6.jpg",
+  ];
   const [opened, setOpened] = useState(false);
   return (
     <div className="App">
@@ -30,9 +40,14 @@ function App() {
       <SofaComponent />
       <ArmchairComponent />
       <LifestyleComponent />
-      <CloseUpShotsComponent />
-      <button onClick={() => setOpened(true)}> open modal</button>
-      <CloseUpComponent opened={opened} setOpened={setOpened} />
+      <CloseUpShotsComponent setOpened={setOpened} opened={opened} />
+      <SecondTextComponent />
+
+      <Carousel>
+        {InstalationSlides.map((s) => (
+          <img className="slides" src={s} />
+        ))}
+      </Carousel>
     </div>
   );
 }
