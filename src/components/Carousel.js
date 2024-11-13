@@ -21,7 +21,7 @@ const Carousel = ({ children: slides }) => {
           className={styles.slides}
           style={{
             transform: `translateY(-${curr * 100}%)`,
-            transition: "transform 0.5s ease-in-out", // smooth transition
+            transition: "transform 0.5s ease-in-out",
           }}
         >
           {slides}
