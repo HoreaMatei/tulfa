@@ -4,17 +4,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100lvh;
+
   overflow: hidden;
+  height: 100vh;
 }
 
 .sofa_and_buttons_div {
-  height: 100lvh;
   width: 50lvw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 100vh;
 }
 
 .sofa_main_img {

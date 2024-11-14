@@ -7,13 +7,44 @@
     rgba(42, 38, 106, 1) 100%
   );
   height: 100%;
+  padding-top: 7%;
+  padding-bottom: 5%;
   color: white;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 86px;
 }
 
 .text {
   width: 60%;
   margin: auto;
   text-align: left;
+}
+
+.text {
+  background: linear-gradient(
+    to bottom,
+
+    white,
+    rgb(201, 201, 201) 75%,
+
+    rgb(201, 201, 201) 75%,
+    white 75%
+  );
+  font-weight: 600;
+  background-size: 100% 200%; /* Stretch background vertically */
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 3s ease-in-out infinite;
+}
+@keyframes animatedTextGradient {
+  0% {
+    background-position: center 0%; /* Start at the top */
+  }
+  50% {
+    background-position: center 100%; /* Move to the bottom */
+  }
+  100% {
+    background-position: center 0%; /* Move back to the top */
+  }
 }

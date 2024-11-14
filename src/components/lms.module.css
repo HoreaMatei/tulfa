@@ -6,6 +6,12 @@
 .lms {
   background: #f0f3fb;
   color: #2a266a;
+  height: 100vh;
+}
+
+.main_text {
+  font-size: 16px;
+  color: #2a266a;
 }
 .l,
 .m,
@@ -17,8 +23,27 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  font-size: 32px;
 }
 
+.p1,
+.p2,
+.p3 {
+  width: 27px;
+  height: 38px;
+  margin-right: -20px;
+}
+.p1 {
+  margin-top: 220px;
+}
+
+.p2 {
+  margin-top: 200px;
+}
+
+.p3 {
+  margin-top: 150px;
+}
 .m {
   margin-top: -620px;
 }

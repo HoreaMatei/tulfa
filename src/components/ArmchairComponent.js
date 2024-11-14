@@ -31,18 +31,18 @@ const ArmchairComponent = () => {
 
         <div className={styles.picks_div}>
           <div className={styles.li_div} onClick={() => setChairColor("blue")}>
-            <p>Prints</p>
+            <p className={styles.pick_text}>Prints</p>
             <img className={styles.pick_img} src="./armchair/blueChair.png" />
           </div>
           <div className={styles.li_div} onClick={() => setChairColor("grey")}>
-            <p>Leathers</p>
+            <p className={styles.pick_text}>Leathers</p>
             <img className={styles.pick_img} src="./armchair/greyChair.png" />
           </div>
           <div
             className={styles.li_div}
             onClick={() => setChairColor("purple")}
           >
-            <p>Embroidery</p>
+            <p className={styles.pick_text}>Embroidery</p>
             <img className={styles.pick_img} src="./armchair/purpleChair.png" />
           </div>
         </div>

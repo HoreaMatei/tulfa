@@ -1,0 +1,149 @@
+.carousel_main {
+  position: relative;
+  width: 695px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.overflow_hidden {
+  position: relative;
+  width: 340px;
+  height: 400px;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.slides > * {
+  width: 340px;
+  height: 400px;
+  flex-shrink: 0;
+  border: 7px solid transparent;
+}
+
+.arrow_div1 {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 120px;
+}
+
+.arrow_div2 {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 120px;
+}
+
+.arrow_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.arrow_button2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.arrow_button:hover {
+  opacity: 70%;
+}
+
+.arrow_button:active {
+  scale: 0.9;
+}
+
+.arrow_icon,
+.arrow_icon_down {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.arrow_icon {
+  transform: rotate(-90deg);
+}
+
+.arrow_icon_down {
+  transform: rotate(90deg);
+}
+
+.box0,
+.box1,
+.box2,
+.box3,
+.box4 {
+  box-sizing: border-box;
+
+  width: 340px;
+  height: 400px;
+  flex-shrink: 0;
+  border: 7px solid transparent;
+  border-radius: 30px;
+}
+
+.box1 {
+  object-fit: cover;
+}
+.box2 {
+  object-fit: unset;
+}
+
+.box4:active,
+.box3:active,
+.box2:active,
+.box1:active,
+.box0:active {
+  transform: scale(2);
+  height: 390px;
+  border-radius: 20px;
+}
+
+.items {
+  position: relative;
+  width: 90%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.items {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.items::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

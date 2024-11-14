@@ -6,3 +6,13 @@
 .videoTag {
   width: 100%;
 }
+.slides {
+  height: 100vh;
+}
+
+.lorem_text_app {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

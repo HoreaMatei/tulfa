@@ -4,13 +4,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  overflow: hidden;
+  min-height: 100lvh;
+  height: 100lvh;
 }
 
 .silosSubDiv {
   text-align: left;
 }
-
+.silo_popup_div {
+  z-index: 100;
+  width: 100vw;
+  position: absolute;
+  background: white;
+  height: 100vh;
+  display: flex;
+}
 .silosP {
   height: 76px;
   width: 414.67px;
@@ -50,6 +58,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.silosBtn:active {
+  scale: 0.9;
+}
+
+.silosBtn:hover {
+  border: 2px solid #2b266aa1;
+  color: #2b266aa1;
 }
 
 .plus {

@@ -22,7 +22,8 @@
 }
 
 .second_text_comp_main {
-  height: 100vh;
+  height: 100lvh;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }

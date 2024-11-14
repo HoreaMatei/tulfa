@@ -1,0 +1,74 @@
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+.siloPop_main {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #f9faff;
+  justify-content: center;
+  height: 792.67px;
+  margin: auto;
+  -webkit-box-shadow: -1px 1px 5px 5px rgba(136, 136, 136, 0.75);
+  -moz-box-shadow: -1px 1px 5px 5px rgba(170, 170, 170, 0.75);
+  box-shadow: -1px 1px 10px 3px rgba(141, 141, 141, 0.75);
+  border-radius: 33px;
+}
+
+.siloPop_p {
+  width: 626.67px;
+  height: 76px;
+  font-size: 32px;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 38, 106, 1) 17%,
+    rgba(82, 75, 208, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.close_icon_silo_div {
+  background: #2a266a;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 48px;
+  top: 48px;
+}
+
+.close_icon_silo {
+  width: 21.6px;
+  height: 21.6px;
+  cursor: pointer;
+}
+.close_icon_silo:hover {
+  scale: 0.9;
+}
+.siloPop_overflow {
+  overflow: hidden;
+
+  width: 340px;
+  height: 400px;
+  flex-shrink: 0;
+
+  border-radius: 20px;
+}
+
+.siloPop_overflow {
+  animation: 2s slide-up;
+}
