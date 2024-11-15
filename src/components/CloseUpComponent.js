@@ -3,7 +3,10 @@ import styles from "./closeupComp.module.css";
 import { useState } from "react";
 const CloseUpComponent = ({ opened, setOpened }) => {
   return (
-    <div className={opened ? styles.closeupContainer : styles.displayNone}>
+    <div
+      id="close_up_id"
+      className={opened ? styles.closeupContainer : styles.displayNone}
+    >
       <button
         className={styles.closeBtn}
         onClick={() => {

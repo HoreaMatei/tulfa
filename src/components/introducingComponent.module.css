@@ -1,0 +1,54 @@
+.intro_text {
+  font-size: 12em;
+  font-weight: bold;
+  color: transparent; /* Make text color transparent */
+
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text; /* For WebKit-based browsers (Chrome, Safari) */
+  background-clip: text; /* For other browsers that support this property */
+  display: inline-block;
+}
+
+.intro_main {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+h5 {
+  width: 80%;
+  color: #000;
+  opacity: 0; /* Invisible initially */
+  transform: translateY(100%); /* Off-screen at the bottom initially */
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+
+  font-size: 12em;
+  font-weight: bold;
+  color: transparent; /* Text is transparent */
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+}
+
+h5.slideIn {
+  opacity: 1;
+  transform: translateY(0); /* Slide in to normal position */
+}
+
+@keyframes animatedTextGradient {
+  0% {
+    background-position: center 0%;
+  }
+  50% {
+    background-position: center 100%;
+  }
+  100% {
+    background-position: center 0%;
+  }
+}

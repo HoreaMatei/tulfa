@@ -18,7 +18,9 @@ import HorizontalCarousel from "./components/HorizontalCarousel";
 import CustomCarousel from "./components/HorizontalCarousel";
 import SiloPopupComponent from "./components/SiloPopupComponent";
 import LoremText from "./components/LoremText";
-
+import IntroducingComponent from "./components/IntroducingComponent";
+import BannerVideo from "./components/BannerVideo";
+import HeroComponent from "./components/HeroComponent";
 function App() {
   const instalationSlides = [
     "./instal/inst1.jpg",
@@ -42,11 +44,12 @@ function App() {
   const [opened, setOpened] = useState(false);
   return (
     <div className="App">
-      <video className="videoTag" autoPlay loop muted>
-        <source src="./sample.mp4" type="video/mp4" />
-      </video>
+      <BannerVideo />
       {/* <VideoText /> */}
+      <IntroducingComponent />
+
       <VisualProd />
+
       <Couch />
       <TextComponent />
       <ProductSilos />

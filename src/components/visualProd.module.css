@@ -36,8 +36,14 @@ h1 {
   animation: animatedTextGradient 3s ease-in-out infinite;
   opacity: 0; /* Image is invisible initially */
   transform: translateY(100%); /* Image starts off-screen (bottom) */
-  transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+  transition: opacity 0.6s, transform 0.6s; /* Smooth transition */
 }
+
+h1.slideIn {
+  opacity: 1; /* Make the image visible */
+  transform: translateY(0); /* Slide the image to its normal position */
+}
+
 @keyframes animatedTextGradient {
   0% {
     background-position: center 0%; /* Start at the top */
@@ -48,9 +54,4 @@ h1 {
   100% {
     background-position: center 0%; /* Move back to the top */
   }
-}
-
-h1.slideIn {
-  opacity: 1; /* Make the image visible */
-  transform: translateY(0); /* Slide the image to its normal position */
 }

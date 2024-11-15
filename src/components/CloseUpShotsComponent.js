@@ -7,7 +7,7 @@ const CloseUpShotsComponent = ({ setOpened, opened }) => {
       <p className={styles.close_up_shots_p}>Close Up Shots</p>
       <img className={styles.closeup_shots_img} src="closeUpShots/2.jpg" />
       <div onClick={() => setOpened(true)} className={styles.closer_look_div}>
-        <p>Take a closer look</p>
+        <a href="#close_up_id">Take a closer look</a>
         <img className={styles.expand_icon} src="closeUpShots/expand.png" />
       </div>
       <CloseUpComponent opened={opened} setOpened={setOpened} />

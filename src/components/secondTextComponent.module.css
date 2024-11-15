@@ -1,16 +1,21 @@
-.lorem_h1 {
+.lorem_h11 {
   width: 446px;
-  height: 74px;
+  height: 10vh;
   background: rgb(67, 62, 153);
   background: linear-gradient(
     90deg,
     rgba(67, 62, 153, 1) 0%,
     rgba(239, 75, 50, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 64px;
   font-weight: bold;
+  display: block;
+  z-index: 1000;
+  color: red;
+  text-align: center;
+  margin: auto;
 }
 
 .lorem_text {
@@ -23,7 +28,7 @@
 
 .second_text_comp_main {
   height: 100lvh;
-  padding-bottom: 20px;
+
   display: flex;
   flex-direction: column;
 }
